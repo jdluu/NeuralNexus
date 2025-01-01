@@ -7,18 +7,21 @@ A versatile AI assistant platform that combines powerful web search capabilities
 ### Multiple Specialized AI Roles
 
 1. **🔍 Research Assistant**
+
    - Comprehensive research across multiple sources
    - Synthesis of complex information
    - Clear and structured presentation of findings
    - Citation of reliable sources
 
 2. **✓ Fact Checker**
+
    - Verification of claims against reliable sources
    - Analysis of source credibility
    - Clear verdict presentation
    - Evidence-based explanations
 
 3. **💻 Technical Expert**
+
    - In-depth technical explanations
    - Code analysis and review
    - Best practices guidance
@@ -47,12 +50,14 @@ A versatile AI assistant platform that combines powerful web search capabilities
 ## Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/jdluu/NeuralNexus.git
 cd NeuralNexus
 ```
 
 2. Create and activate a virtual environment:
+
 ```bash
 python -m venv .venv
 # On Windows
@@ -62,24 +67,29 @@ source .venv/bin/activate
 ```
 
 3. Install dependencies:
+
 ```bash
 pip install -r requirements.txt
 ```
 
 4. Create a `.env` file in the root directory:
+
 ```env
-SEARCH_API_KEY=your_search_api_key
-LLM_API_KEY=your_llm_api_key
+GLHF_API_KEY=your_glhf_api_key_here
+BRAVE_API_KEY=your_brave_api_key_here
+LLM_MODEL=hf:meta-llama/Llama-3.3-70B-Instruct
 ```
 
 ## Usage
 
 Run the Streamlit web interface:
+
 ```bash
 streamlit run streamlit_ui.py
 ```
 
 The interface will guide you through:
+
 1. Selecting the most appropriate AI role for your task
 2. Entering your query or request
 3. Viewing the AI's response with relevant sources and information
@@ -91,8 +101,8 @@ The interface will guide you through:
   - `fact_checker.py`: Claim verification and evidence assessment
   - `technical_expert.py`: Technical guidance and implementation help
   - `creative_writer.py`: Creative content generation and writing assistance
-  
 - `src/`: Core functionality
+
   - `web_search.py`: Web search integration
   - `llm_handler.py`: Language model interaction
   - `base_role.py`: Base class for AI roles
